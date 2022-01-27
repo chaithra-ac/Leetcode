@@ -11,7 +11,7 @@ class Solution {
             else s = p + 1;
         }
 //      if the 'x' is not in range of array then the 'p' will return the position of 'x' to be
-//      so, move the position to -1 so that the range towards left and right can be easily maintained
+//      so, move the position to p-1 so that the range towards left and right can be easily maintained
             
         p = a[p] == x ? p : p - 1;
 
