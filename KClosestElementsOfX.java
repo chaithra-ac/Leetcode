@@ -10,10 +10,10 @@ class Solution {
             else if (a[p] > x) e = p;
             else s = p + 1;
         }
-//      if the 'x' is not in range of array then the 'p' will return the position of 'x' to be
-//      so, move the position to p-1 so that the range towards left and right can be easily maintained
+//      if the 'x' is not in range of array then return 's' ,the position of 'x' to be
+//      move the position to s-1 so that the range towards left and right can be easily maintained
             
-        p = a[p] == x ? p : p - 1;
+        p = a[p] == x ? p : s - 1;
 
 
 //      once the position of x is found, find the closest elements for 'x' upto 'k' and add them to list
