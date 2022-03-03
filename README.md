@@ -7,10 +7,13 @@
 
 | #    |      Title     |   Solutions   | Difficulty               
 |------|----------------|---------------|-------------
-| 413 |[Arithmetic slices](https://leetcode.com/problems/arithmetic-slices/)|[Java](413-%20Arithmetic%20Slices.java) |Medium|
-|392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[Java](.../Solutions/isSubSequence.java)|Medium|
-||[]()|[]()|Hard|
-||[]()|[]()|Easy|
+| 413 |[Arithmetic slices](https://leetcode.com/problems/arithmetic-slices/)|[Java](Solutions/ArithmeticSlices.java) |Medium|
+|392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[Java](/Solutions/isSubSequence.java)|Medium|
+| | []() | [Java]() | Medium |
+| | []() | [Java]() | Hard |
+| | []() | [Java]() | Easy |
+| | []() | [Java]() | Medium |
+
 
 
 
