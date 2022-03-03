@@ -1,3 +1,6 @@
+/*
+https://leetcode.com/problems/arithmetic-slices/
+*/
 class Solution {
     List<Integer>list;
     int res;
