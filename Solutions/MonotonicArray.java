@@ -15,6 +15,7 @@ class Solution {
     }
 }
 
+
 //approach 2
 class Solution {
     public boolean isMonotonic(int[] A) {
