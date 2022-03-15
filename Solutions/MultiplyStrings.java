@@ -20,8 +20,7 @@ class Solution {
                 sb.setCharAt(curPos, digit);
                 carry = multiply /10;
                 curPos++;
-                // Add to the next position this can also help with the case we have carry left in the end
-                // it might even be a digit since it might exceed 10
+
                 if(carry > 0) {
                     if(curPos >= sb.length()) {
                         sb.append((char)(carry + '0'));
