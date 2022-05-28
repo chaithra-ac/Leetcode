@@ -1,4 +1,4 @@
-//
+//https://leetcode.com/problems/is-graph-bipartite/
 
 //approach 1=bfs
 class Solution {
