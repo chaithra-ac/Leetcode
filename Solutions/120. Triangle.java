@@ -1,4 +1,6 @@
 //https://leetcode.com/problems/triangle/
+
+//approach 1 optimized
 class Solution {
     int prev,a,b;
     public int minimumTotal(List<List<Integer>> list) {
@@ -12,4 +14,23 @@ class Solution {
       } 
         return dp[0];
       }
+}
+
+//approach 2(recursion)(TLE)
+class Solution {
+    int min=Integer.MAX_VALUE;
+    public int minimumTotal(List<List<Integer>> triangle) {
+       return compute(triangle,0,0,triangle.size(),0); 
+        
+    }
+    int compute(List<List<Integer>>list,int s,int i,int n,int sum){
+       if(i==n&&min>sum)
+           return sum; 
+        if(i>=n)
+            return Integer.MAX_VALUE;
+        return Math.min(compute(list,s,i+1,n,sum+list.get(i).get(s)),
+                        compute(list,s+1,i+1,n,sum+list.get(i).get(s)));
+        
+    }
+    
 }
