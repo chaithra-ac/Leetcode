@@ -17,12 +17,13 @@ class Solution {
         for(int i=0;i<words.length;i++){
             if(set.contains(words[i]))
                 continue;
+            
             sb.append(words[i]+'#');
             set.add(words[i]);
-            Trie cur=root;
+            
             for(int j=1;j<words[i].length();j++){
                 if(root.trie[words[i].charAt(j)-'a']!=null){
-                    if(hasShortString(cur,j,words[i]))
+                    if(hasShortString(root,j,words[i]))
                         set.add(words[i].substring(j));
                 }
             }
