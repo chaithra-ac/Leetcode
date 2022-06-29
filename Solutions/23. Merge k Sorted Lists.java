@@ -11,9 +11,11 @@
  */
 class Solution {
     
-    public ListNode mergeKLists(ListNode[] lists) {
       ListNode res=new ListNode();
-        for(int i=0;i<lists.length;i++)
+    public ListNode mergeKLists(ListNode[] lists) {
+        if(lists.length>0)
+            res.next=lists[0];
+        for(int i=1;i<lists.length;i++)
             merge(lists[i],res);
         return res.next;
     }
