@@ -15,8 +15,8 @@ class Solution {
               }
             else return false;
         }
-        for(int i:map.values())
-            if(i>0)return false;
+//         for(int i:map.values())
+//             if(i>0)return false;
         return true;
     }
 }
