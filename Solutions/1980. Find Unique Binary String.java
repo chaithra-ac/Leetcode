@@ -1,4 +1,6 @@
 // https://leetcode.com/problems/find-unique-binary-string/
+
+//approach 1
 class Solution {
     public String findDifferentBinaryString(String[] nums) {
        Set<String>set=new HashSet<>();
@@ -18,7 +20,7 @@ class Solution {
 }
 
 
-//slight modified))instead of converting each store straight away integers into set and convert only if particular unique bs isnt present!
+//slight modified))instead of converting each ,store straight away integers(converted bs) into set and convert only if particular unique bs isnt present!
 class Solution {
     public String findDifferentBinaryString(String[] nums) {
        Set<Integer>set=new HashSet<>();
