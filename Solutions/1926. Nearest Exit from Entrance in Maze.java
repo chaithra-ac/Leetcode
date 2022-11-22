@@ -4,7 +4,7 @@ class Solution {
 
     public int nearestExit(char[][] maze, int[] entrance) {
         int dir[]={1,-1};
-       int m=maze.length,n=maze[0].length,ans=Integer.MAX_VALUE;
+       int m=maze.length,n=maze[0].length;
        boolean [][]vis=new boolean[m][n];
        Queue<Pair>q=new LinkedList<>(); 
        q.add(new Pair(entrance[0],entrance[1],0));
@@ -28,7 +28,7 @@ class Solution {
                  }
              }
        }
-       return ans==Integer.MAX_VALUE?-1:ans;
+       return -1;
     }
 }
 
